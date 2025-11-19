@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Galeria de fanarts inspiradas em Ado — artes feitas por fãs, com créditos e respeito aos autores." />
+  <title>Fanarts - Ado</title>
+
+  <!-- Bootstrap 5.3.8 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="Geral.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blur fixed-top py-2">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="Home_Page_Ado.html">
+        <img src="Imagens_ADO/ADO_2lg.jpg" alt="Logo da Ado Shop" height="35" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded-3" href="Home_Page_Ado.html">Início</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3 active" href="#" data-bs-toggle="dropdown">
+              Sobre
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="Biografia.html">Biografia</a></li>
+              <li><a class="dropdown-item py-2 active" href="Fanarts.html">Fanarts</a></li>
+              <li><a class="dropdown-item py-2" href="Curiosidades_&_Lives.html">Curiosidades & Lives</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              Música
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="Turnês.html">Turnês</a></li>
+              <li><a class="dropdown-item py-2" href="Discografia_&_Albuns.html">Discografia & Albuns</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              Produtos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-1" href="Produto1.html">Produto 1</a></li>
+              <li><a class="dropdown-item py-1" href="Produto2.html">Produto 2</a></li>
+              <li><a class="dropdown-item py-1" href="Produto3.html">Produto 3</a></li>
+              <li><a class="dropdown-item py-1" href="Produto4.html">Produto 4</a></li>
+              <li><a class="dropdown-item py-1" href="Produto5.html">Produto 5</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded-3" href="Contato.html">
+              Contato
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              Idioma
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="index-english.html">English</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill">
+              <i class="bi bi-moon-stars me-1"></i><span>Dark</span>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner (Carrossel) -->
+  <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="Imagens_ADO/Gangue_Ado.jpg" class="d-block w-100" alt="Merch da Turnê Hibana">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="card-body">
+            <h2 class="h6 mb-1">HIBANA</h2>
+            <p class="small text-contrast-3 mb-2">
+              Ilustração dos personagens das músicas referente ao Tour 2023 "Hibana".
+            </p>
+            <p class="small mb-0">
+              <strong>Artista:</strong> @myaodayone<br>
+              <span class="text-contrast-3">Publicada originalmente no X.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="Imagens_ADO/Fanart_Ado1.jpg" class="d-block w-100" alt="Armario da Ado">
+        <div class="carousel-caption d-none d-md-block">
+           <div class="card-body">
+            <h2 class="h6 mb-1">Armario da Ado</h2>
+            <p class="small text-contrast-3 mb-2">
+              Inspirado no UTATTEMITA.
+            </p>
+            <p class="small mb-0">
+              <strong>Artista:</strong> @myaodayone<br>
+              <span class="text-contrast-3">Publicada originalmente no X.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+
+  <!-- Conteúdo principal -->
+  <main class="container section-pad">
+    <header class="mb-5 text-center">
+      <h1 class="display-4 mb-3">Galeria de Fanarts</h1>
+      <p class="lead text-contrast-2">
+        Uma seleção de artes criadas por fãs inspirados em Ado, em suas músicas e personagens relacionadas.
+        Todas as obras aqui exibidas são de responsabilidade de seus respectivos autores.
+      </p>
+      <p class="small text-contrast-3 mb-0">
+        Este é um espaço de homenagem. Se você é autor de alguma arte e deseja atualização de crédito ou remoção,
+        entre em contato pela página <a href="Contato.html" class="link-light">Contato</a>.
+      </p>
+    </header>
+
+    <!-- Grade de fanarts -->
+    <section class="mb-5">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 rounded-4">
+            <div class="rounded-top-4 overflow-hidden">
+              <!-- troque o src pela fanart que quiser -->
+              <img src="Imagens_ADO/Fanart_Ado3.jpg" class="w-100 h-100" style="object-fit: cover;"
+                alt="Fanart inspirada em New Genesis">
+            </div>
+            <div class="card-body">
+              <h2 class="h6 mb-1">Ado birthday art</h2>
+              <p class="small text-contrast-3 mb-2">
+                Ilustração para comemorar o aniversário de Ado que era em <data value="2002-10-24">24 de outubro de
+                  2002</data>.
+              </p>
+              <p class="small mb-0">
+                <strong>Artista:</strong> @kpbmsv_<br>
+                <span class="text-contrast-3">Publicada originalmente no X.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 rounded-4">
+            <div class="rounded-top-4 overflow-hidden">
+              <img src="Imagens_ADO/Fanart_Ado.png" class="w-100 h-100" style="object-fit: cover;"
+                alt="Fanart inspirada em Usseewa">
+            </div>
+            <div class="card-body">
+              <h2 class="h6 mb-1">Adomination</h2>
+              <p class="small text-contrast-3 mb-2">
+                Inspirado na imagem gacha ado.
+              </p>
+              <p class="small mb-0">
+                <strong>Artista:</strong> @No_Desk_6086<br>
+                <span class="text-contrast-3">Publicada originalmente no Reddit.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 rounded-4">
+            <div class="rounded-top-4 overflow-hidden">
+              <img src="Imagens_ADO/Fanart_Ado4.jpg" class="w-100 h-100" style="object-fit: cover;"
+                alt="Fanart chibi / pelúcia">
+            </div>
+            <div class="card-body">
+              <h2 class="h6 mb-1">Gacha Adomination</h2>
+              <p class="small text-contrast-3 mb-2">
+                Representação em estilo fofo,mas a versão original do Adomination. 
+              </p>
+              <p class="small mb-0">
+                <strong>Artista:</strong> Desconhecido<br>
+                <span class="text-contrast-3">Como é uma imagem que foi compartilhada amplamente, a autoria original é incerta.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      
+      </div>
+    </section>
+
+    <!-- Orientações para envio de fanarts -->
+    <section>
+      <h2 class="h5 mb-3">Envio de Fanarts e Créditos</h2>
+      <p class="text-contrast-2">
+        Se você produz fanarts de Ado e gostaria de ver seu trabalho referenciado aqui, é possível adaptar esta
+        página para exibir apenas artes com autorização dos autores, adicionando links para o perfil original
+        (X, Instagram, Pixiv, etc.).
+      </p>
+      <ul class="small text-contrast-3 mb-0">
+        <li>Créditos devem incluir ao menos o @ do artista e, se possível, link para a postagem original.</li>
+        <li>Não re-hospede imagens oficiais pagas ou conteúdos protegidos por direitos autorais sem permissão.</li>
+        <li>Pedidos de remoção serão respeitados mediante comprovação de autoria.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="py-5 border-top border-contrast-3 border-secondary">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="fw-bold">Ado — Feito pelo Joel</span>
+          </div>
+          <p class="text-contrast-3 small mb-0">Template não oficial e sem afiliação.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex gap-3 justify-content-md-end">
+            <a class="btn btn-icon" target="_blank" rel="noopener"
+              href="https://www.youtube.com/@Ado1024" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener" href="https://ado-shop.com/"
+              aria-label="Loja oficial">
+              <i class="bi bi-bag"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener" href="https://open.spotify.com/search/ado%20artist"
+              aria-label="Spotify">
+              <i class="bi bi-spotify"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener" href="https://x.com/search?q=ado%20%23ado"
+              aria-label="X/Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script de tema/carrinho -->
+  <script src="script.1.js"></script>
+</body>
+
+</html>

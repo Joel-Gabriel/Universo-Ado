@@ -1,0 +1,306 @@
+/* Paleta (inspirada no visual da Ado: escuro + neon azul/magenta) */
+:root {
+  --bg: #0A0D14;
+  --bg-2: #0E1220; /* seções alternadas */
+  --text: #EAEAF0;
+  --text-2: #C9CED8;
+  --text-3: #8B93A6;
+
+  --accent: #00e1ffc2;            /* azul neon */
+  --accent-2: #FF3DAE;          /* magenta neon */
+  --accent-soft: color-mix(in srgb, var(--accent) 16%, transparent);
+  --accent-ring: color-mix(in srgb, var(--accent) 50%, transparent);
+
+  --surface: #121624;
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.12);
+
+  --shadow: 0 10px 40px rgba(0,0,0,0.45);
+
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+
+  --grad: radial-gradient(1200px 600px at 10% -10%, rgba(0,224,255,0.15), transparent 60%),
+           radial-gradient(800px 400px at 110% 10%, rgba(255,61,174,0.14), transparent 60%);
+}
+
+* { box-sizing: border-box; }
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+.section-pad { padding: 72px 0; }
+.bg-section { background: var(--bg-2); }
+
+.text-contrast-2 { color: var(--text-2) !important; }
+.text-contrast-3 { color: var(--text-3) !important; }
+.text-accent { color: var(--accent) !important; }
+
+.border-contrast-3 { border-color: var(--border) !important; }
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-2); }
+
+
+.navbar.bg-blur {
+  background: rgba(10,13,20,0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Hero */
+.hero {
+  padding-top: 88px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0) 60%),
+    var(--grad),
+    var(--bg);
+  position: relative;
+}
+.hero .display-4 { letter-spacing: 0.5px; }
+.text-gradient {
+  background: linear-gradient(90deg, #fff, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero .hero-art .ratio { background: var(--card); }
+.ratio.bg-cover { background-size: cover; background-position: center; background-image: var(--bg); }
+
+/* Decorativos */
+.orb {
+  position: absolute; border-radius: 999px; filter: blur(40px); opacity: 0.5; pointer-events: none;
+}
+.orb-1 { width: 420px; height: 420px; left: -120px; top: -80px; background: radial-gradient(closest-side, var(--accent), transparent); animation: float 12s ease-in-out infinite; }
+.orb-2 { width: 520px; height: 520px; right: -160px; bottom: -100px; background: radial-gradient(closest-side, var(--accent-2), transparent); animation: float 14s ease-in-out infinite reverse; }
+.grid-overlay {
+  position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px; mask-image: linear-gradient(180deg, rgba(0,0,0,0.9), transparent 85%);
+  pointer-events: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-8px) translateX(6px); }
+}
+
+/* Cards/Glass */
+.card-glass  {
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+
+
+.rounded-top-4 { border-top-left-radius: var(--radius-xl)!important; border-top-right-radius: var(--radius-xl)!important; }
+/* Cards do Home Page_Ado.html */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  transition: transform 0.3s;
+  border: none;
+  color: var(--text);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  object-fit: cover;
+}
+.row-1{
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Botões */
+.btn-neon-primary {
+  --btn-bg: color-mix(in srgb, var(--accent) 26%, transparent);
+  background: var(--btn-bg);
+  border: 1px solid var(--accent-ring);
+  color: white;
+  box-shadow: 0 0 0 0 rgba(0,224,255,0.3);
+  transition: transform .12s ease, box-shadow .2s ease, background .2s ease;
+}
+.btn-neon-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 32px 4px rgba(0,224,255,0.18);
+}
+.btn-outline-accent {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn-outline-accent:hover {
+  background: var(--accent);
+  color: #081018;
+}
+.btn-icon {
+  width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border); border-radius: 999px; color: var(--text-2);
+}
+.btn-icon:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Badges */
+.bg-accent-soft {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+
+/* Inputs */
+.form-control, .form-select {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+.form-control::placeholder { color: var(--text-3); }
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 .25rem rgba(0,224,255,0.15);
+}
+
+/* Utilitários */
+.min-vh-75 { min-height: 80vh; }
+
+/* Carousel do Home Page_Ado.html */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+}
+.carousel-caption h5 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+.carousel-indicators button {
+  background-color: var(--primary);
+}
+.carousel-indicators .active {
+  background-color: var(--secondary);
+}
+.carousel {
+  padding-top: 62px;
+}
+
+/* Responsividade refinada */
+@media (max-width: 575.98px) {
+  .display-4 { font-size: 2.25rem; }
+}
+
+/* Tema claro opcional (toggle) */
+body.theme-light {
+  --bg: #F7F8FB;
+  --bg-2: #FFFFFF;
+  --text: #0E1220;
+  --text-2: #2D3446;
+  --text-3: #5E687E;
+
+  --surface: #FFFFFF;
+  --card: rgba(0,0,0,0.02);
+  --border: rgba(0,0,0,0.12);
+  --accent: #00e1ff76;
+  
+
+  --grad: radial-gradient(1200px 600px at 10% -10%, rgba(0,224,255,0.12), transparent 60%),
+           radial-gradient(800px 400px at 110% 10%, rgba(255,61,174,0.12), transparent 60%);
+}
+
+/* Acessibilidade: foco visível */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+
+/* Quadro 3x4 manual para página de produto.html */
+.poster-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;           /* ~3x4 */
+  background: #000;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.poster-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Miniaturas */
+.poster-thumb {
+  width: 70px;
+  height: 70px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+  opacity: 0.8;
+}
+
+.poster-thumb:hover {
+  transform: translateY(-1px);
+  opacity: 1;
+}
+
+.active-thumb {
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.card-img-top1{
+    width: 400px;
+  height: 300px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+  opacity: 0.8;
+}
+
+
+/* ===== Agenda de shows – modo padrão (dark) ===== 
+.turnes-head {
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.06),;
+}
+
+.turnes-table tbody tr:nth-of-type(odd) > * {
+  background-color: rgba(255,255,255,0.06);
+}
+
+.turnes-table tbody tr:hover > * {
+  background-color: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
+*/
+/* ===== Agenda de shows – modo claro ===== 
+.theme-light .turnes-head {
+  background: var(--bg, #F7F8FB);
+  color: var(--text-3, #5E687E);
+}
+
+.theme-light .turnes-table {
+  color: var(--text, #0E1220);
+}
+
+.theme-light .turnes-table tbody tr:nth-of-type(odd) > * {
+  background-color: var(--bg, #F7F8FB);
+}
+
+.theme-light .turnes-table tbody tr:hover > * {
+  background-color: var(--bg, #F7F8FB);
+}*/

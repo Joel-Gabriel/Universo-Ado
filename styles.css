@@ -1,0 +1,173 @@
+/* Customização inspirada na Ado */
+:root {
+  --primary: #FF2E63; /* Vermelho neon (Hibana) */
+  --secondary: #6B3FA0; /* Roxo (Aishite Aishite Aishite) */
+  --dark: #1c2526; /* Fundo escuro */
+  --bg: #0A0D14;
+  --bg-2: #0E1220; /* seções alternadas */
+  --text: #EAEAF0;
+  --text-2: #C9CED8;
+  --text-3: #8B93A6;
+
+  --accent: #00E0FF;            /* azul neon */
+  --accent-2: #FF3DAE;          /* magenta neon */
+  --accent-soft: color-mix(in srgb, var(--accent) 16%, transparent);
+  --accent-ring: color-mix(in srgb, var(--accent) 50%, transparent);
+
+  --surface: #121624;
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.12);
+}
+
+.section-pad { padding: 72px 0; }
+.bg-section { background: var(--bg-2); }
+
+.text-contrast-2 { color: var(--text-2) !important; }
+.text-contrast-3 { color: var(--text-3) !important; }
+.text-accent { color: var(--accent) !important; }
+
+.border-contrast-3 { border-color: var(--border) !important; }
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-2); }
+
+body {
+  background-color: var(--dark);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--dark) !important;
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+
+/* Carousel */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+}
+.carousel-caption h5 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+.carousel-indicators button {
+  background-color: var(--primary);
+}
+.carousel-indicators .active {
+  background-color: var(--secondary);
+}
+
+/* Cards */
+.card {
+  background-color: #2C2F33;
+  transition: transform 0.3s;
+  border: none;
+  color: #FFFFFF;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-icon {
+  width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border); border-radius: 999px; color: var(--text-2);
+}
+.btn-icon:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Emblemas */
+.bg-accent-soft {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+/* Títulos */
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+}
+
+/* Sobre Ado */
+.container h2,.container p {
+  color: #FFFFFF;
+} 
+
+/* Footer */
+
+
+/* Mobile ajustes */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  .btn-lg {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  .carousel-item img {
+    max-height: 300px;
+  }
+}
+
+/* Fade-in animation */
+.carousel-item {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* ——— Complementos p/ o template opening.html ——— */
+
+/* Garante cobertura visual consistente nos banners do carrossel */
+.object-cover {
+  object-fit: cover;
+  height: 500px;
+}
+@media (max-width: 767.98px) { .object-cover { height: 420px; } }
+@media (max-width: 575.98px) { .object-cover { height: 360px; } }
+
+/* Classe utilitária para títulos com Bebas, usada no HTML */
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Pequeno realce ao passar o mouse nos botões outline */
+.btn-outline-primary:hover,
+.btn-outline-dark:hover {
+  transform: translateY(-1px);
+}
+
+/* Acessibilidade: foco visível */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

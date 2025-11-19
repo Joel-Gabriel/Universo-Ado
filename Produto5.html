@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Cantor Ado Pôster HD Art Casa Sala De Estar Quarto Bar Decoração Estética - Produto demonstrativo." />
+    <title>Action Figure - Ado</title>
+
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+    <!-- Ícones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="Geral.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blur fixed-top py-2">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="Home_Page_Ado.html">
+                <img src="Imagens_ADO/ADO_2lg.jpg" alt="Logo da Ado Shop" height="35" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded-3" href="Home_Page_Ado.html">Início</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+                            Sobre
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item py-2" href="Biografia.html">Biografia</a></li>
+                            <li><a class="dropdown-item py-2" href="Fanarts.html">Fanarts</a></li>
+                            <li><a class="dropdown-item py-2" href="Curiosidades_&_Lives.html">Curiosidades &amp;
+                                    Lives</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+                            Música
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item py-2" href="Turnês.html">Turnês</a></li>
+                            <li><a class="dropdown-item py-2" href="Discografia_&_Albuns.html">Discografia &amp;
+                                    Albuns</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3 py-2 rounded-3 active" href="#"
+                            data-bs-toggle="dropdown">
+                            Produtos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item py-1 active" href="Produto1.html">Produto 1</a></li>
+                            <li><a class="dropdown-item py-1" href="Produto2.html">Produto 2</a></li>
+                            <li><a class="dropdown-item py-1" href="Produto3.html">Produto 3</a></li>
+                            <li><a class="dropdown-item py-1" href="Produto4.html">Produto 4</a></li>
+                            <li><a class="dropdown-item py-1" href="Produto5.html">Produto 5</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded-3" href="Contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+                            Idioma
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item py-2" href="index-english.html">English</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill">
+                            <i class="bi bi-moon-stars me-1"></i><span>Dark</span>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal estilo Shopee -->
+    <main class="container section-pad">
+        <div class="row g-4 pt-4">
+            <!-- Coluna esquerda: imagem grande + miniaturas -->
+            <div class="col-lg-6">
+                <div class="card-glass rounded-4 mb-3">
+                    <div class="card-body">
+                        <!-- Quadro 3x4 manual -->
+                        <div class="poster-wrapper">
+                            <img id="posterPrincipal" src="Imagens_ADO/Action_Figure.jpg"
+                                alt="Cantor Ado Pôster HD Art Casa Sala De Estar Quarto Bar Decoração Estética"
+                                class="poster-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miniaturas clicáveis -->
+                <div class="d-flex flex-wrap gap-2">
+                    <!-- z1 -->
+                    <button type="button" class="btn p-0 border-0 bg-transparent"
+                        onclick="trocarPoster('Imagens_ADO/Action_Figure.jpg', this)">
+                        <img src="Imagens_ADO/Action_Figure.jpg" class="poster-thumb" alt="Variante Z1">
+                    </button>
+                    <!-- z2 -->
+                    <button type="button" class="btn p-0 border-0 bg-transparent"
+                        onclick="trocarPoster('Imagens_ADO/Action_FigureFoto.jpg', this)">
+                        <img src="Imagens_ADO/Action_FigureFoto.jpg" class="poster-thumb active-thumb"
+                            alt="Variante Z2">
+                    </button>
+                    <!-- z3 -->
+                    <button type="button" class="btn p-0 border-0 bg-transparent"
+                        onclick="trocarPoster('Imagens_ADO/Action_Figure1.jpg', this)">
+                        <img src="Imagens_ADO/Action_Figure1.jpg" class="poster-thumb active-thumb" alt="Variante Z3">
+                    </button>
+
+                    <!-- z4  -->
+                    <button type="button" class="btn p-0 border-0 bg-transparent"
+                        onclick="trocarPoster('Imagens_ADO/Action_Figure2.jpg', this)">
+                        <img src="Imagens_ADO/Action_Figure2.jpg" class="poster-thumb" alt="Variante Z4">
+                    </button>
+
+                    <!-- z5 -->
+                    <button type="button" class="btn p-0 border-0 bg-transparent"
+                        onclick="trocarPoster('Imagens_ADO/Action_Figure3.jpg', this)">
+                        <img src="Imagens_ADO/Action_Figure3.jpg" class="poster-thumb" alt="Variante Z5">
+                    </button>
+
+                    <!-- z6 -->
+                    <button type="button" class="btn p-0 border-0 bg-transparent"
+                        onclick="trocarPoster('Imagens_ADO/Action_Figure4.jpg', this)">
+                        <img src="Imagens_ADO/Action_Figure4.jpg" class="poster-thumb" alt="Variante Z6">
+                    </button>
+                    <!-- z7 -->
+                    <button type="button" class="btn p-0 border-0 bg-transparent"
+                        onclick="trocarPoster('Imagens_ADO/Action_Figure5.jpg', this)">
+                        <img src="Imagens_ADO/Action_Figure5.jpg" class="poster-thumb" alt="Variante Z7">
+                    </button>
+
+                    <!-- z8 -->
+                    <button type="button" class="btn p-0 border-0 bg-transparent"
+                        onclick="trocarPoster('Imagens_ADO/Action_Figure6.jpg', this)">
+                        <img src="Imagens_ADO/Action_Figure6.jpg" class="poster-thumb" alt="Variante Z8">
+                    </button>
+
+
+
+                </div>
+            </div>
+            <!-- Coluna direita: infos do produto -->
+            <div class="col-lg-6">
+                <!-- Título -->
+                <h1 class="h4 mb-2">
+                    Boneco Ado Versão Inverno Presente Novo Item Limitado 2025
+                </h1>
+
+                <!-- Nota + avaliações + vendidos -->
+                <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="small text-contrast-3">5.0</span>
+                    </div>
+                    <span class="small text-contrast-3">88 avaliações</span>
+                    <span class="small text-contrast-3">205 vendidos</span>
+                </div>
+
+                <!-- Preço -->
+                <div class="py-3 px-3 mb-3 rounded-4" style="background: var(--bg);">
+                    <div class="d-flex flex-wrap align-items-baseline gap-3">
+                        <span class="display-6 fw-bold text-contrast-3">R$ 524,46</span>
+                        <span class="text-contrast-3 text-decoration-line-through">R$ 1048,92</span>
+                        <span class="badge bg-accent-soft text-contrast-3">50% OFF</span>
+                    </div>
+                    <p class="text-contrast-3 small mb-0 mt-2">
+                        Produto internacional objeto de declaração de importação e sujeito a impostos estaduais e
+                        federais.
+                    </p>
+                </div>
+
+                <!-- Promoções -->
+                <div class="mb-3">
+                    <h2 class="h6 mb-2">Promoções</h2>
+                    <div class="border rounded-3 p-3 border-contrast-3">
+                        <p class="mb-1 small">
+                            <span class="badge bg-danger me-2">Cupom da Loja</span>
+                            50% OFF em compras selecionadas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Frete (estático) -->
+                <div class="mb-3">
+                    <h2 class="h6 mb-2">Frete</h2>
+                    <div class="border rounded-3 p-3 border-contrast-3 small">
+                        <div class="d-flex justify-content-between">
+                            <span><i class="bi bi-truck me-1 text-contrast-3"></i>Frete para</span>
+                            <span class="text-contrast-3">São Paulo, São Paulo</span>
+                        </div>
+                        <div class="mt-1 d-flex justify-content-between">
+                            <span>Frete</span>
+                            <span class="text-contrast-3">
+                                <span class="text-decoration-line-through">R$ 13,00</span> R$ 0,00
+                            </span>
+                        </div>
+                        <p class="mt-2 mb-0 text-contrast-3">
+                            <strong>Frete grátis</strong> com cupom.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quantidade + botões -->
+                <div class="mb-4 d-flex flex-wrap align-items-center gap-3">
+                    <div>
+                        <h2 class="h6 mb-1">Quantidade</h2>
+                        <div class="input-group" style="width: 140px;">
+                            <button class="btn btn-outline-accent text-contrast-3" type="button"
+                                onclick="ajustarQtde(-1)">-</button>
+                            <input id="qtde" type="number" class="form-control text-center" value="1" min="1">
+                            <button class="btn btn-outline-accent text-contrast-3" type="button"
+                                onclick="ajustarQtde(1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-grow-1 d-flex flex-wrap gap-2 mt-3 mt-sm-4">
+                        <button class="btn btn-outline-accent text-contrast-3 flex-grow-1"
+                            onclick="addToCart('Boneco Ado Versão Inverno Presente Novo Item Limitado 2025', 524.46)">
+                            <i class="bi bi-bag-plus me-1"></i> Adicionar ao carrinho
+                        </button>
+                        <a href="Home_Page_Ado.html" class="btn text-contrast-3 btn-outline-accent flex-grow-1">
+                            <i class="bi bi-shop me-1"></i> Ver mais produtos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Descrição -->
+                <div class="border-top pt-3 mt-3">
+                    <h2 class="h6 mb-2">Descrição</h2>
+                    <p class="small text-contrast-3 mb-0 row-gap-2">
+                        Este é o Boneco Oficial da Ado na Rara Versão Inverno, um item limitado e novo para 2025,
+                        perfeito para colecionadores. O boneco está em condição impecável (Novo) e possui
+                        aproximadamente 17,8 cm (7 polegadas) de altura, fabricado em material PVC de alta qualidade.
+                        Priorizamos a agilidade na entrega com envio expresso (via FedEx, DHL ou Correios do Japão) e
+                        garantimos o envio do seu pedido em até 5 a 10 dias úteis após a confirmação do pagamento. O
+                        pacote tem um prazo estimado de chegada de 1 a 3 semanas após o envio, assegurando que o seu
+                        item exclusivo chegue rapidamente.
+
+                        Para compradores internacionais nos Estados Unidos, é importante notar que todos os impostos de
+                        importação, taxas e encargos já estão inclusos no preço final do item e nos custos de envio; ou
+                        seja, não haverá cobrança adicional após a compra. Atenção: em caso de cancelamento por
+                        circunstâncias do comprador, uma taxa do PayPal será aplicada. Além disso, se o seu endereço de
+                        entrega for classificado como área remota pela transportadora, uma taxa de envio adicional
+                        poderá ser cobrada. Agradecemos a compreensão e o interesse neste item exclusivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- seção “você também pode gostar” (opcional) -->
+        <section class="mt-5">
+            <h2 class="h5 mb-3">Você também pode gostar</h2>
+            <div class="row g-3">
+                <div class="col-md-3 pt-4">
+                    <a href="Produto2.html" class="text-decoration-none">
+                        <div class="card h-100">
+                            <img src="Imagens_ADO/Pelúcia_ADO.jpg" class="card-img-top"
+                                alt="Pelúcia da Ado Hibana 21x14 Macio e Fofo Brinquedo">
+                            <div class="card-body rounded-4 mb-3">
+                                <h3 class="h6 mb-1">Pelúcia da Ado Hibana 21x14 Macio e Fofo Brinquedo</h3>
+                                <p class="small text-contrast-3 mb-0">R$ 42,99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pt-4">
+                    <a href="Produto2.html" class="text-decoration-none">
+                        <div class="card h-100">
+                            <img src="Imagens_ADO/Kyogen_-_Ado.jpg" class="card-img-top"
+                                alt="Albuns - KYOUGEN, UTATTEMITA, Best Adobum">
+                            <div class="card-body rounded-4 mb-3">
+                                <h3 class="h6 mb-1">Albuns - KYOUGEN, UTATTEMITA, Best Adobum</h3>
+                                <p class="small text-contrast-3 mb-0">R$ 99,90</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pt-4">
+                    <a href="Produto3.html" class="text-decoration-none">
+                        <div class="card h-100">
+                            <img src="Imagens_ADO/Posters_Ado.jpg" class="card-img-top"
+                                alt="Poster HD Art Casa Sala De Estar da Ado Quarto Bar Decoração Estética">
+                            <div class="card-body rounded-4 mb-3">
+                                <h3 class="h6 mb-1">Poster HD Art Casa Sala De Estar da Ado Quarto Bar Decoração
+                                    Estética</h3>
+                                <p class="small text-contrast-3 mb-0">R$ 13,99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pt-4">
+                    <a href="Produto4.html" class="text-decoration-none">
+                        <div class="card h-100">
+                            <img src="Imagens_ADO/Ado_LightStick.jpg" class="card-img-top"
+                                alt="Ado Live Tour 2024 Oficial Mona Lisa Light Stick">
+                            <div class="card-body rounded-4 mb-3">
+                                <h3 class="h6 mb-1">Ado Live Tour 2024 Oficial Mona Lisa Light Stick Testado Japão</h3>
+                                <p class="small text-contrast-3 mb-0">R$ 835,33</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="py-5 border-top border-contrast-3 border-secondary">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="fw-bold">Ado — Feito pelo Joel</span>
+                    </div>
+                    <p class="text-contrast-3 small mb-0">Template não oficial e sem afiliação.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-3 justify-content-md-end">
+                        <a class="btn btn-icon" target="_blank" rel="noopener"
+                            href="https://www.youtube.com/@Ado1024" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a class="btn btn-icon" target="_blank" rel="noopener" href="https://ado-shop.com/"
+                            aria-label="Loja oficial">
+                            <i class="bi bi-bag"></i>
+                        </a>
+                        <a class="btn btn-icon" target="_blank" rel="noopener"
+                            href="https://open.spotify.com/search/ado%20artist" aria-label="Spotify">
+                            <i class="bi bi-spotify"></i>
+                        </a>
+                        <a class="btn btn-icon" target="_blank" rel="noopener"
+                            href="https://x.com/ado1024imokenp" aria-label="X/Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de tema e carrinho -->
+    <script src="script.1.js"></script>
+
+</body>
+
+</html>

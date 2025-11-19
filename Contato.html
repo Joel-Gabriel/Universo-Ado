@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Contato - Ado FanSite / Ado Shop – Envie sugestões, correções ou solicitações relacionadas ao site." />
+  <title>Contato - Ado </title>
+
+  <!-- Bootstrap 5.3.8 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="Geral.css" />
+</head>
+
+<body>
+  <!-- Navbar igual à Home_Page_Ado -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blur fixed-top py-2">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="Home_Page_Ado.html">
+        <img src="Imagens_ADO/ADO_2lg.jpg" alt="Logo da Ado Shop" height="35" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded-3" href="Home_Page_Ado.html">Início</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              Sobre
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="Biografia.html">Biografia</a></li>
+              <li><a class="dropdown-item py-2" href="Fanarts.html">Fanarts</a></li>
+              <li><a class="dropdown-item py-2" href="Curiosidades_&_Lives.html">Curiosidades & Lives</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              Música
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="Turnês.html">Turnês</a></li>
+              <li><a class="dropdown-item py-2" href="Discografia_&_Albuns.html">Discografia & Albuns</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">Produtos</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-1" href="Produto1.html">Produto 1</a></li>
+              <li><a class="dropdown-item py-1" href="Produto2.html">Produto 2</a></li>
+              <li><a class="dropdown-item py-1" href="Produto3.html">Produto 3</a></li>
+              <li><a class="dropdown-item py-1" href="Produto4.html">Produto 4</a></li>
+              <li><a class="dropdown-item py-1" href="Produto5.html">Produto 5</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded-3 active" href="Contato.html">
+              Contato
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              Idioma
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="index-english.html">English</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill">
+              <i class="bi bi-moon-stars me-1"></i><span>Dark</span>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container section-pad min-vh-75">
+    <div class="row justify-content-center pt-4 pt-md-5">
+      <div class="col-12 text-center mb-4">
+        <h1 class="display-4 mb-2">Contato</h1>
+        <p class="lead text-contrast-2">
+          Fale sobre sugestões, correções, pedidos de remoção de conteúdo ou ideias para o Ado FanSite.
+          Este formulário é apenas para assuntos relacionados ao site, não é um canal oficial da artista.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 align-items-start">
+      <!-- Formulário -->
+      <div class="col-lg-7">
+        <div class="card-glass rounded-1">
+          <div class="card-body">
+            <h2 class="h4 mb-3">Envie sua mensagem</h2>
+            <p class="text-contrast-3 small mb-4">
+              Campos marcados com * são obrigatórios. Não inclua dados pessoais sensíveis (documentos, endereços completos, etc.).
+            </p>
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome *</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail *</label>
+                <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="assunto" class="form-label">Assunto *</label>
+                <input type="text" class="form-control" id="assunto" placeholder="Sugestão, correção, pedido de remoção..." required>
+              </div>
+
+              <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo de mensagem</label>
+                <select id="tipo" class="form-select">
+                  <option value="">Selecione uma opção</option>
+                  <option value="sugestao">Sugestão de conteúdo</option>
+                  <option value="correcao">Correção de informação</option>
+                  <option value="remocao">Pedido de remoção de imagem/conteúdo</option>
+                  <option value="elogio">Elogio</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem *</label>
+                <textarea class="form-control" id="mensagem" rows="6"
+                  placeholder="Descreva com detalhes sua solicitação, com links ou referências se necessário."
+                  required></textarea>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="aceite"
+                  required>
+                <label class="form-check-label small text-contrast-3" for="aceite">
+                  Eu entendo que este é um site de fã, não oficial, e que minha mensagem não será enviada diretamente para a artista.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-outline-accent px-4">
+                <i class="bi bi-envelope-paper-heart me-1"></i> Enviar mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informações laterais -->
+      <div class="col-lg-5">
+        <div class="card-glass rounded-1 mb-4">
+          <div class="card-body">
+            <h2 class="h5 mb-3">Informações importantes</h2>
+            <p class="text-contrast-2 mb-2">
+              Este site é um projeto de fã, sem fins lucrativos, e não possui vínculo oficial com Ado, gravadoras,
+              agências ou produtores.
+            </p>
+            <ul class="text-contrast-3 small mb-0">
+              <li>Não podemos encaminhar mensagens diretamente para a artista.</li>
+              <li>Conteúdos exibidos aqui são baseados em informações públicas e materiais de fãs.</li>
+              <li>Caso algum conteúdo infrinja direitos, solicite a remoção informando o máximo de detalhes possível.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-glass rounded-1">
+          <div class="card-body">
+            <h2 class="h5 mb-3">Canais oficiais</h2>
+            <p class="text-contrast-3 small">
+              Para acompanhar Ado pelos canais oficiais, use os links abaixo (quando disponíveis):
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-icon" target="_blank" rel="noopener"
+                href="https://www.youtube.com/@Ado1024" aria-label="YouTube Ado">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a class="btn btn-icon" target="_blank" rel="noopener"
+                href="https://ado-shop.com/" aria-label="Loja oficial da Ado">
+                <i class="bi bi-bag"></i>
+              </a>
+              <a class="btn btn-icon" target="_blank" rel="noopener"
+                href="https://open.spotify.com/search/ado%20artist" aria-label="Spotify Ado">
+                <i class="bi bi-spotify"></i>
+              </a>
+              <a class="btn btn-icon" target="_blank" rel="noopener"
+                href="roundhttps://x.com/ado1024imokenped-1" aria-label="X/Twitter Ado">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="py-5 border-top border-contrast-3 border-secondary">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="fw-bold">Ado — Feito pelo Joel</span>
+          </div>
+          <p class="text-contrast-3 small mb-0">Template não oficial e sem afiliação.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex gap-3 justify-content-md-end">
+            <a class="btn btn-icon" target="_blank" rel="noopener"
+              href="https://www.youtube.com/@Ado1024" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener" href="https://ado-shop.com/"
+              aria-label="Loja oficial">
+              <i class="bi bi-bag"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener"
+              href="https://open.spotify.com/search/ado%20artist" aria-label="Spotify">
+              <i class="bi bi-spotify"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener"
+              href="roundhttps://x.com/ado1024imokenped-1" aria-label="X/Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script de tema e carrinho -->
+  <script src="script.1.js"></script>
+</body>
+
+</html>
