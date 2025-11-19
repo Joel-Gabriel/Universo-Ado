@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="HD poster art for Ado — aesthetic wall decoration for living room, bedroom or bar. Demo product page." />
+  <title>Posters - Ado</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="Geral.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blur fixed-top py-2">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="Home_Page_Ado-en.html">
+        <img src="Imagens_ADO/ADO_2lg.jpg" alt="Ado Shop Logo" height="35" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded-3" href="Home_Page_Ado-en.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="Biografia-en.html">Biography</a></li>
+              <li><a class="dropdown-item py-2" href="Fanarts-en.html">Fanarts</a></li>
+              <li><a class="dropdown-item py-2" href="Curiosidades_&_Lives-en.html">Trivia & Lives</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              Music
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="Turnes-en.html">Tours</a></li>
+              <li><a class="dropdown-item py-2" href="Discografia_&_Albuns-en.html">Discography & Albums</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3 active" href="#" data-bs-toggle="dropdown">
+              Products
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-1" href="Produto1-en.html">Product 1</a></li>
+              <li><a class="dropdown-item py-1" href="Produto2-en.html">Product 2</a></li>
+              <li><a class="dropdown-item py-1 active" href="Produto3-en.html">Product 3</a></li>
+              <li><a class="dropdown-item py-1" href="Produto4-en.html">Product 4</a></li>
+              <li><a class="dropdown-item py-1" href="Produto5-en.html">Product 5</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded-3" href="Contato-en.html">
+              Contact
+            </a>
+          </li>
+
+          <!-- Language -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 py-2 rounded-3" href="#" data-bs-toggle="dropdown">
+              Language
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item py-2" href="Produto3.html">Português (Brasil)</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill">
+              <i class="bi bi-moon-stars me-1"></i><span>Dark</span>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="container section-pad">
+    <div class="row g-4 pt-4">
+      <!-- Left: images -->
+      <div class="col-lg-6">
+        <div class="card-glass rounded-4 mb-3">
+          <div class="card-body">
+            <div class="poster-wrapper">
+              <img id="posterPrincipal" src="Imagens_ADO/Posters_Ado.jpg"
+                alt="Ado HD posters set" class="poster-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn p-0 border-0 bg-transparent"
+            onclick="trocarPoster('Imagens_ADO/Posters_Ado.jpg', this)">
+            <img src="Imagens_ADO/Posters_Ado.jpg" class="poster-thumb active-thumb" alt="Variant z1">
+          </button>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent"
+            onclick="trocarPoster('Imagens_ADO/Poster_A.jpg', this)">
+            <img src="Imagens_ADO/Poster_A.jpg" class="poster-thumb" alt="Variant z2">
+          </button>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent"
+            onclick="trocarPoster('Imagens_ADO/Poster_B.jpg', this)">
+            <img src="Imagens_ADO/Poster_B.jpg" class="poster-thumb" alt="Variant z3">
+          </button>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent"
+            onclick="trocarPoster('Imagens_ADO/Poster_C.jpg', this)">
+            <img src="Imagens_ADO/Poster_C.jpg" class="poster-thumb" alt="Variant z4">
+          </button>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent"
+            onclick="trocarPoster('Imagens_ADO/Poster_D.jpg', this)">
+            <img src="Imagens_ADO/Poster_D.jpg" class="poster-thumb" alt="Variant z5">
+          </button>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent"
+            onclick="trocarPoster('Imagens_ADO/Poster_E.jpg', this)">
+            <img src="Imagens_ADO/Poster_E.jpg" class="poster-thumb" alt="Variant z6">
+          </button>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent"
+            onclick="trocarPoster('Imagens_ADO/Poster_F.jpg', this)">
+            <img src="Imagens_ADO/Poster_F.jpg" class="poster-thumb" alt="Variant z7">
+          </button>
+
+          <button type="button" class="btn p-0 border-0 bg-transparent"
+            onclick="trocarPoster('Imagens_ADO/Poster_G.jpg', this)">
+            <img src="Imagens_ADO/Poster_G.jpg" class="poster-thumb" alt="Variant z8">
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: info -->
+      <div class="col-lg-6">
+        <h1 class="h4 mb-2">
+          HD Poster Art – Ado Aesthetic Wall Decor (Living Room / Bedroom / Bar)
+        </h1>
+
+        <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+          <div class="d-flex align-items-center gap-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </span>
+            <span class="small text-contrast-3">5.0</span>
+          </div>
+          <span class="small text-contrast-3">55 reviews</span>
+          <span class="small text-contrast-3">134 sold</span>
+        </div>
+
+        <div class="py-3 px-3 mb-3 rounded-4" style="background: var(--bg);">
+          <div class="d-flex flex-wrap align-items-baseline gap-3">
+            <span class="display-6 fw-bold text-contrast-3">R$ 13,99</span>
+            <span class="text-contrast-3 text-decoration-line-through">R$ 27,98</span>
+            <span class="badge bg-accent-soft text-contrast-3">50% OFF</span>
+          </div>
+          <p class="text-contrast-3 small mb-0 mt-2">
+            International product, subject to import declaration and possible state and federal taxes.
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <h2 class="h6 mb-2">Promotions</h2>
+          <div class="border rounded-3 p-3 border-contrast-3">
+            <p class="mb-1 small">
+              <span class="badge bg-danger me-2">Store Coupon</span>
+              50% OFF on selected purchases.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <h2 class="h6 mb-2">Shipping</h2>
+          <div class="border rounded-3 p-3 border-contrast-3 small">
+            <div class="d-flex justify-content-between">
+              <span><i class="bi bi-truck me-1 text-contrast-3"></i>Ship to</span>
+              <span class="text-contrast-3">São Paulo, São Paulo</span>
+            </div>
+            <div class="mt-1 d-flex justify-content-between">
+              <span>Shipping</span>
+              <span class="text-contrast-3">
+                <span class="text-decoration-line-through">R$ 13,00</span> R$ 0,00
+              </span>
+            </div>
+            <p class="mt-2 mb-0 text-contrast-3">
+              <strong>Free shipping</strong> with coupon.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <h2 class="h6 mb-2">Variant</h2>
+          <div class="d-flex flex-wrap gap-2">
+            <button type="button" class="btn btn-outline-accent text-contrast-3 btn-sm"
+              onclick="trocarPoster('Imagens_ADO/Poster_A.jpg', this)">Z1</button>
+            <button type="button" class="btn btn-outline-accent text-contrast-3 btn-sm"
+              onclick="trocarPoster('Imagens_ADO/Poster_B.jpg', this)">Z2</button>
+            <button type="button" class="btn btn-outline-accent text-contrast-3 btn-sm"
+              onclick="trocarPoster('Imagens_ADO/Poster_C.jpg', this)">Z3</button>
+            <button type="button" class="btn btn-outline-accent text-contrast-3 btn-sm"
+              onclick="trocarPoster('Imagens_ADO/Poster_D.jpg', this)">Z4</button>
+            <button type="button" class="btn btn-outline-accent text-contrast-3 btn-sm"
+              onclick="trocarPoster('Imagens_ADO/Poster_E.jpg', this)">Z5</button>
+            <button type="button" class="btn btn-outline-accent text-contrast-3 btn-sm"
+              onclick="trocarPoster('Imagens_ADO/Poster_F.jpg', this)">Z6</button>
+            <button type="button" class="btn btn-outline-accent text-contrast-3 btn-sm"
+              onclick="trocarPoster('Imagens_ADO/Poster_G.jpg', this)">Z7</button>
+          </div>
+        </div>
+
+        <div class="mb-4 d-flex flex-wrap align-items-center gap-3">
+          <div>
+            <h2 class="h6 mb-1">Quantity</h2>
+            <div class="input-group" style="width: 140px;">
+              <button class="btn btn-outline-accent text-contrast-3" type="button" onclick="ajustarQtde(-1)">-</button>
+              <input id="qtde" type="number" class="form-control text-center" value="1" min="1">
+              <button class="btn btn-outline-accent text-contrast-3" type="button" onclick="ajustarQtde(1)">+</button>
+            </div>
+          </div>
+
+          <div class="flex-grow-1 d-flex flex-wrap gap-2 mt-3 mt-sm-4">
+            <button class="btn btn-outline-accent text-contrast-3 flex-grow-1"
+              onclick="addToCart('HD Poster Art – Ado Aesthetic Wall Decor', 13.99)">
+              <i class="bi bi-bag-plus me-1"></i> Add to cart
+            </button>
+            <a href="Home_Page_Ado-en.html" class="btn text-contrast-3 btn-outline-accent flex-grow-1">
+              <i class="bi bi-shop me-1"></i> See more products
+            </a>
+          </div>
+        </div>
+
+        <div class="border-top pt-3 mt-3">
+          <h2 class="h6 mb-2">Description</h2>
+          <p class="small text-contrast-3 mb-0">
+            Transform your room, bar or living room with this HD Ado poster. Printed on high‑quality white copper
+            paper (A3 size, 42×30 cm), it brings a vibrant abstract aesthetic inspired by the singer’s visuals.
+            Perfect for fans who want a modern, impactful decoration piece.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- You may also like -->
+    <section class="mt-5">
+      <h2 class="h5 mb-3">You may also like</h2>
+      <div class="row g-3">
+        <div class="col-md-3 pt-4">
+          <a href="Produto1-en.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Imagens_ADO/Pelúcia_ADO.jpg" class="card-img-top"
+                alt="Ado Hibana plush 21x14">
+              <div class="card-body rounded-4 mb-3">
+                <h3 class="h6 mb-1">Ado Hibana Plush 21x14</h3>
+                <p class="small text-contrast-3 mb-0">R$ 42,99</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 pt-4">
+          <a href="Produto2-en.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Imagens_ADO/Kyogen_-_Ado.jpg" class="card-img-top"
+                alt="Albums – KYOUGEN, UTATTEMITA, Best Adobum">
+              <div class="card-body rounded-4 mb-3">
+                <h3 class="h6 mb-1">Albums – KYOUGEN, UTATTEMITA, Best Adobum</h3>
+                <p class="small text-contrast-3 mb-0">R$ 99,90</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 pt-4">
+          <a href="Produto4-en.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Imagens_ADO/Ado_LightStick.jpg" class="card-img-top"
+                alt="Ado Light Stick">
+              <div class="card-body rounded-4 mb-3">
+                <h3 class="h6 mb-1">Ado Mona Lisa Light Stick</h3>
+                <p class="small text-contrast-3 mb-0">R$ 835,33</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 pt-4">
+          <a href="Produto5-en.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Imagens_ADO/Action_Figure.jpg" class="card-img-top"
+                alt="Ado Winter Figure">
+              <div class="card-body rounded-4 mb-3">
+                <h3 class="h6 mb-1">Ado Winter Version Figure</h3>
+                <p class="small text-contrast-3 mb-0">R$ 524,46</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5 border-top border-contrast-3 border-secondary">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="fw-bold">Ado — Made by Joel</span>
+          </div>
+          <p class="text-contrast-3 small mb-0">Unofficial template, no affiliation.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex gap-3 justify-content-md-end">
+            <a class="btn btn-icon" target="_blank" rel="noopener"
+              href="https://www.youtube.com/@Ado1024" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener" href="https://ado-shop.com/"
+              aria-label="Official shop">
+              <i class="bi bi-bag"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener"
+              href="https://open.spotify.com/search/ado%20artist" aria-label="Spotify">
+              <i class="bi bi-spotify"></i>
+            </a>
+            <a class="btn btn-icon" target="_blank" rel="noopener"
+              href="https://x.com/ado1024imokenp" aria-label="X/Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.1.js"></script>
+</body>
+
+</html>
